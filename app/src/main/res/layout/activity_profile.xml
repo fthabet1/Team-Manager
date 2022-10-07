@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:columnCount="3"
+            app:rowCount="2">
+
+            <ImageView
+                android:id="@+id/bulls"
+                android:layout_width="146dp"
+                android:layout_height="150dp"
+                android:onClick="SetTeamIcon"
+                app:layout_column="0"
+                app:layout_columnSpan="1"
+                app:layout_row="0"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/bulls" />
+
+            <ImageView
+                android:id="@+id/knicks"
+                android:layout_width="139dp"
+                android:layout_height="150dp"
+                android:onClick="SetTeamIcon"
+                app:layout_column="1"
+                app:layout_columnSpan="1"
+                app:layout_row="0"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/knicks" />
+
+            <ImageView
+                android:id="@+id/lakers"
+                android:layout_width="117dp"
+                android:layout_height="149dp"
+                android:onClick="SetTeamIcon"
+                app:layout_column="2"
+                app:layout_columnSpan="1"
+                app:layout_row="0"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/lakers" />
+
+            <ImageView
+                android:id="@+id/magic"
+                android:layout_width="144dp"
+                android:layout_height="122dp"
+                android:onClick="SetTeamIcon"
+                app:layout_column="0"
+                app:layout_columnSpan="1"
+                app:layout_row="1"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/magic" />
+
+            <ImageView
+                android:id="@+id/nets"
+                android:layout_width="139dp"
+                android:layout_height="121dp"
+                android:onClick="SetTeamIcon"
+                app:layout_column="1"
+                app:layout_columnSpan="1"
+                app:layout_row="1"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/nets" />
+
+            <ImageView
+                android:id="@+id/raptors"
+                android:layout_width="114dp"
+                android:layout_height="123dp"
+                android:onClick="SetTeamIcon"
+                app:layout_column="2"
+                app:layout_columnSpan="1"
+                app:layout_row="1"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/raptors" />
+
+            <ImageView
+                android:id="@+id/strawhat"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                app:srcCompat="@drawable/strawhat"
+                android:onClick="SetTeamIcon"
+                tools:visibility="invisible" />
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="100dp"
+            android:text="Load From Phone" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
