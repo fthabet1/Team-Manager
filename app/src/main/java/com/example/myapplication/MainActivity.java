@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_CANCELED) return;
 //Getting the Avatar Image we show to our users
-        ImageView avatarImage = (ImageView) findViewById(R.id.strawhat);
+        ImageView avatarImage = (ImageView) findViewById(R.id.imageView);
 //Figuring out the correct image
         String drawableName;
         switch (data.getIntExtra("imageID", R.id.bulls)) {
